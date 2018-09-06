@@ -2,4 +2,11 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: oi9b/S3t2i1yDxhyQKbwe7oDzyDbPiEZkkqi9LmmDl5nhxDgwTubvR8tHAZUXrEoWRDHEiYJnndK2+/JBdmdwo9q8JQG3yzgXjVfXUMpWBSV6kXXBL/gMNCUnaozgui0jPFifaz5XiokpU6ZRszU7cjNM/7mMIUr62kk1cH8CmjiiuhxkM+94W3uas+neht+XKnfn0lHdvb5YH3LGi6YWgWIjnG6jh70s+gSbaH4Zgl4ymtqza3TjljNPREns5mOP8ytTnApp31ygFxOjzyBaeYGariYMEKgRroDRpTM48kJIqFYjmKBHpUBTdku/ZXG9kxWZVl12GTfrAZZv0tNbqIRxobPS3uSWXj9fWKcC/7U4qsoDMkKOOPwODYwvfsea9ZFmdQKgV8i58T6mHIJ8kCxtuwYErhVlGE+LHRwXqrdDynaUTrzxQQtVL26C9FcC/5mXH31SyPzqKMCT8YI8qJNTNwrJX4y49GxKvAEeU7YFOxgrjOnJi+E/xFjanb3x479dwFqs7uLIwVoxisJd4VwJbdXY/GggeWjbKV+g3+u+qpJGByHmfFHlabgyinHF+pwYY+N5blpNXCEHSJvu5EC2saMIA2j68FGw035M48B3q1QypzGLP1BY48LF/4+iThvCWnSW9IEN+LHukP5lq/bt4nN8CCTm3MGHqUSZCw=
+  app: calm-lowlands-64387
+  on:
+    repo: sobhit000/dream-journal-app-client
