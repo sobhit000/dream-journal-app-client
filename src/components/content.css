@@ -1,0 +1,10 @@
+.content {
+  min-height: 200px;
+  padding: 30px 15px;
+  background-color:#ddd;
+}
+
+p {
+  margin: 0 auto;
+  max-width: 650px;
+}

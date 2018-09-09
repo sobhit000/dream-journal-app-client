@@ -1,0 +1,10 @@
+.searchpastdreams {
+	min-height: 200px;
+  	padding: 30px 15px;
+	background-color: #ddd;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+}

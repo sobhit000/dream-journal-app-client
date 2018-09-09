@@ -1,0 +1,42 @@
+.newdream {
+  min-height: 200px;
+  padding: 30px 15px;
+  background-color: bisque;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+label {
+  display: block;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.dream-type-explanation {
+  font-size: 14px;
+}
+
+.dream-entry {
+  min-height: 0;
+}
+
+.dream-entry header {
+  padding: 0;
+}
+
+.dream-entry header h3 {
+  margin: 0;
+}
+
+form {
+  text-align:center;
+}
