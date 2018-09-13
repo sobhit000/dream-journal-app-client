@@ -1,7 +1,13 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './newdream.css'
 
-export default class NewDream extends React.Component {
+export class NewDream extends React.Component {
+	onSubmit(event){
+		event.preventDefault();
+		 		
+	}
+	
 	render () {
 		return (
 				<div className="newdream">
@@ -9,7 +15,7 @@ export default class NewDream extends React.Component {
 				        <header>
 				          <h3>New Dream</h3>
 				        </header>
-				        <form id="record-dream">
+				        <form id="record-dream" onSubmit={e => this.onSubmit(e)}>
 				          <div className="form-section">
 				            <label for="dream-title">Dream title</label>
 				            <input type="text" name="dream-title" placeholder="Flying dream" required />
@@ -34,3 +40,5 @@ export default class NewDream extends React.Component {
 			);
 	}
 }
+
+export default connect ()(NewDream);
