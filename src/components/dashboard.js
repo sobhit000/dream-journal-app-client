@@ -5,14 +5,13 @@ import NewDream from './newdream';
 import SearchPastDreams from './searchpastdreams';
 import PastDreams from './pastdreams';
 
-export default function Game(props) {
+export default function Dashboard(props) {
   return (
         <div>
           <Navbar />
           <Welcome />
           <NewDream />
-          <SearchPastDreams />
-          <PastDreams />          
+          <PastDreams />                    
         </div>
       );
 }

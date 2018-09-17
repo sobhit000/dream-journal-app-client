@@ -1,18 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './pastdreams.css'
 
-export default class PastDreams extends React.Component {
-	render () {
+export function PastDreams(props) {
 		return (
 				<div className="pastdreams">
 					<section>
 				        <header>
-				          <h3>Dream about lorem</h3>
-				          <p>January 2, 2018</p>
+				          <h3>{props.dreamTitle}</h3>
+				          <p>{props.dreamDate}</p>
 				        </header>    
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				        <button>Edit Dream</button>
-				        <button>Delete Dream</button>        
+				        <p>{props.dreamSummary}</p>				                
 				    </section>
 				    <section>
 				        <header>
@@ -25,5 +23,13 @@ export default class PastDreams extends React.Component {
 	      			</section>
 	      		</div>
 			);
-	}
+	
 }
+
+const mapStateToProps = state => ({
+  dreamTitle: state.dreamTitle,
+  dreamSummary: state.dreamSummary,
+  dreamDate: state.dreamDate
+});
+
+export default connect(mapStateToProps)(PastDreams);

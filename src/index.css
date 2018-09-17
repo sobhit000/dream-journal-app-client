@@ -7,3 +7,23 @@ body {
   line-height:1.5;
   text-align: center;
 }
+
+.message {
+    padding: 12px 6px;
+}
+
+.message-success {
+    background-color: #5CB85C;
+    color: white;
+}
+
+.message-error, .form-error {
+    background-color: #d9534f;
+    color: white;
+}
+
+.form-error {
+    margin: 0 6px;
+    padding: 6px;
+    display: inline-block;
+}
