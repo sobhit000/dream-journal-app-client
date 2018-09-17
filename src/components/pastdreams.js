@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './pastdreams.css'
 
 export function PastDreams(props) {
+		console.log('pastdreams:', props);		
 		return (
 				<div className="pastdreams">
 					<section>
@@ -26,7 +27,7 @@ export function PastDreams(props) {
 	
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = state => ({	
   dreamTitle: state.dreamTitle,
   dreamSummary: state.dreamSummary,
   dreamDate: state.dreamDate

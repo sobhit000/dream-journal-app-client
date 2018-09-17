@@ -1,15 +1,18 @@
 import React from 'react';
-import { connect } from 'react-redux';
+//import { connect } from 'react-redux';
 import './newdream.css';
 import Input from './input';
-import {required, nonEmpty, email} from '../validators';
-import {reduxForm, Field, SubmissionError, focus} from 'redux-form';
+import {required, nonEmpty} from '../validators';
+import {reduxForm, Field} from 'redux-form';
 import {addDream} from '../actions';
 
 export class NewDream extends React.Component {
 	onSubmit(values){
-		console.log(values);
-		this.props.dispatch(addDream(values));
+		//console.log(values);
+		const dreamTitle = values.dreamTitle;
+		const dreamSummary = values.dreamSummary;
+		const dreamDate = values.dreamDate;		
+		this.props.dispatch(addDream(dreamTitle, dreamSummary, dreamDate));
 	}
 	
 	render () {		

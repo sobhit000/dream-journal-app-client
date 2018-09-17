@@ -1,7 +1,9 @@
 export const ADD_DREAM = 'ADD_DREAM';
-export const addDream = dream => ({
+export const addDream = (dreamTitle, dreamSummary, dreamDate) => ({
     type: ADD_DREAM,
-    dream
+    dreamTitle,
+    dreamSummary,
+    dreamDate
 });
 
 export const UPDATE_DREAM = 'UPDATE_DREAM';
