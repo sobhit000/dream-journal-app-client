@@ -5,14 +5,12 @@ import Signin from './signin';
 import Content from './content';
 import Signup from './signup';
 
-export default function Game(props) {
+export default function Home(props) {
   return (
         <div>
           <Navbar />
-          <Banner />
-          <Signin />
-          <Content />
-          <Signup />          
+          <Banner />          
+          <Content />                    
         </div>
       );
 }

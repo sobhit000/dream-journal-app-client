@@ -6,16 +6,15 @@ import {required, nonEmpty} from '../validators';
 import {reduxForm, Field} from 'redux-form';
 import {addDream} from '../actions';
 
-export class NewDream extends React.Component {
-	onSubmit(values){
-		//console.log(values);
+export class NewDream extends React.Component {	
+	onSubmit(values){		
 		const dreamTitle = values.dreamTitle;
 		const dreamSummary = values.dreamSummary;
-		const dreamDate = values.dreamDate;		
+		const dreamDate = values.dreamDate;				
 		this.props.dispatch(addDream(dreamTitle, dreamSummary, dreamDate));
 	}
 	
-	render () {		
+	render () {				
 		let successMessage;
         if (this.props.submitSucceeded) {
             successMessage = (

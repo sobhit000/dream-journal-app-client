@@ -7,13 +7,14 @@ export const addDream = (dreamTitle, dreamSummary, dreamDate) => ({
 });
 
 export const UPDATE_DREAM = 'UPDATE_DREAM';
-export const updateDream = dream => ({
+export const updateDream = (dream, listIndex) => ({
     type: UPDATE_DREAM,
-    dream
+    dream,
+    listIndex
 });
 
 export const DELETE_DREAM = 'DELETE_DREAM';
-export const deleteDream = dream => ({
+export const deleteDream = listIndex => ({
     type: DELETE_DREAM,
-    dream
+    listIndex
 });

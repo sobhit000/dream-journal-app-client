@@ -1,13 +1,15 @@
 import React from 'react';
 import './signup.css';
+import Navbar from './navbar';
 
 export default class Signup extends React.Component {
 	render () {
 		return (
 				<div className="signup">
+					<Navbar />
 					<section>
 				        <header>
-				            <h3>Start tracking your dreams</h3>
+				            <h3>SignUp</h3>
 				        </header>
 				        <form className='signup-form'>
 				            <div>

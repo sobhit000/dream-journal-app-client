@@ -6,6 +6,6 @@ import {dreamReducer} from './reducer';
 export default createStore(
     combineReducers({
         form: formReducer,
-        dreamReducer
+        dreams: dreamReducer
     })
 )

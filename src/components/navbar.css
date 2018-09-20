@@ -1,9 +1,13 @@
 nav {
-  padding: 1% 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  background-color:aqua;
+  background-color:aqua;  
+}
+
+li {
+	display: inline-block;
+	margin-right: 10px;
 }

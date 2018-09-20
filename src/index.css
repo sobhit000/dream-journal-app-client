@@ -27,3 +27,7 @@ body {
     padding: 6px;
     display: inline-block;
 }
+
+ul {
+  list-style: none;
+}
